@@ -1,0 +1,68 @@
+@import "../../styles";
+
+.work-container {
+  margin-top: 80px;
+}
+
+.work-main {
+  display: flex;
+}
+
+.launch-proj {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    color: black;
+    font-family: Khand;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 42px;
+    border: 2px solid black;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+}
+
+.proj {
+  background: blue;
+  max-width: 450px;
+
+  .projnum {
+    font-size: 70px;
+  }
+  h2 {
+    color: green;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: -55px;
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  img {
+    height: 150px;
+  }
+}
+
+.proj-components {
+  display: flex;
+  margin: 10px
+}
+

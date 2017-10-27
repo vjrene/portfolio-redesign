@@ -1,0 +1,73 @@
+@import '../styles';
+
+nav {
+  font-family: Khand;
+  text-align: right;
+  max-width: 1080px;
+
+  @include mobile {
+    display: none;
+  }
+
+  a {
+    color: $dark-tan;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 18px;
+    transition: font-size 0.5s ease;
+    margin: 15px;
+    line-height: 25px;
+    vertical-align: middle;
+
+    &:hover {
+      color: $forest;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+
+  .active {
+    color: $forest;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.router-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+/******************** SVG *******************/
+.top-left {
+  svg {
+    position: absolute;
+    top: -250px;
+    left: -280px;
+    transform: scale(.5);
+    z-index: -10;
+
+    @include mobile {
+      left: -350px;
+      top: -300px;
+      transform: scale(.25);
+    }
+  }
+
+}
+
+.bottom-right {
+  svg {
+    position: fixed;
+    bottom: -410px;
+    right: -380px;
+    transform: scale(.5);
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

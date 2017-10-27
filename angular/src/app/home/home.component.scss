@@ -1,0 +1,92 @@
+@import "../../styles";
+
+
+.home-container--header {
+  display: flex;
+  justify-content: center;
+}
+
+.home-header {
+  text-align: center;
+  max-width: 420px;
+}
+
+h1 {
+  color: $dark-tan;
+  font-size: 3em;
+}
+
+h2 {
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+h2, p {
+  font-family: Open Sans;
+  color: $forest;
+}
+
+p {
+  font-style: italic;
+}
+
+.home-body {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.home-link {
+  width: 30%;
+  padding-top: 2em;
+  h2 {
+    font-family: Khand;
+  }
+
+  @include mobile {
+    padding-top:0;
+    width: 50%;
+  }
+}
+
+.side-home {
+  // displa
+}
+
+.contact {
+  //display: flex;
+  //justify-content: right;
+  //align-content: right;
+}
+
+.latest-project {
+  width: 60%;
+}
+
+/*********************************** SVG ********************************/
+svg {
+  width: 100%;
+
+  .shadow, .main-bg, .text {
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    .text {
+      transform: translate(0, -8px);
+      fill: $grapefruit;
+    }
+    .main-bg {
+      transform: translate(0, -6px);
+    }
+    .shadow {
+      transform: translate(0, 3px);
+    }
+
+  }
+
+}
+
