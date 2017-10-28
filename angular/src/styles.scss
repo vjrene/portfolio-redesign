@@ -32,3 +32,33 @@ $forest: #153e40;
   color: $grapefruit;
 }
 
+// buttons 
+.launch-proj {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.launch-button {
+  display: inline-block;
+  color: black;
+  font-family: Khand;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $pink;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  line-height: 42px;
+  border: 2px solid $pink;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: $pink;
+    background: white;
+  }
+}
+
+

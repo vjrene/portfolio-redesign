@@ -33,42 +33,108 @@ p {
 
 .home-body {
   display: flex;
+  padding-top: 2em;
 
   @include mobile {
     flex-direction: column;
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
 .home-link {
-  width: 30%;
+  width: 33%;
   padding-top: 2em;
+  text-align: center;
   h2 {
     font-family: Khand;
   }
 
   @include mobile {
     padding-top:0;
-    width: 50%;
+    width: 100%;
   }
 }
 
-.side-home {
-  // displa
+.port {
+  @include mobile {
+    text-align: left;
+  }
 }
 
 .contact {
-  //display: flex;
-  //justify-content: right;
-  //align-content: right;
+  @include mobile {
+    text-align: right;
+  }
+}
+
+
+.preview-image {
+  height: 250px;
+  max-width: 500px;
+  background: $forest;
+  margin-bottom: 1em;
 }
 
 .latest-project {
-  width: 60%;
+  min-width: 450px;
+
+  align-content: center;
+  justify-content: center;
+  display: flex;
+
+  h2 {
+    font-family: Khand;
+  }
+
+  @include mobile {
+    //width: 100%;
+    min-width: 0;
+  }
+}
+
+.latest-proj-title {
+  color: $dark-tan;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.latest-proj-name {
+  color: $emerald;
+  font-size: 30px;
+}
+
+.latest-project--summary {
+  display: flex;
+  h4 {
+    text-transform: uppercase;
+  }
+
+  div {
+    margin: 10px;
+    width: 50%;
+
+    &:nth-of-type(2) {
+      text-align: right;
+    }
+  }
+}
+
+.launch-button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .launch-button {
+    width: 70%;
+  }
 }
 
 /*********************************** SVG ********************************/
 svg {
-  width: 100%;
+  //width: 100%;
+  max-width: 235px;
 
   .shadow, .main-bg, .text {
     transition: 0.5s ease;

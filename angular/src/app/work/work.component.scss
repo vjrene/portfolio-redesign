@@ -8,33 +8,6 @@
   display: flex;
 }
 
-.launch-proj {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  a {
-    display: inline-block;
-    color: black;
-    font-family: Khand;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: white;
-    height: 40px;
-    width: 100px;
-    text-align: center;
-    line-height: 42px;
-    border: 2px solid black;
-    transition: 0.5s ease;
-
-    &:hover {
-      color: white;
-      background: black;
-    }
-  }
-}
 
 .proj {
   background: blue;

@@ -45,15 +45,15 @@ nav {
 .top-left {
   svg {
     position: absolute;
-    top: -250px;
+    top: -265px;
     left: -280px;
-    transform: scale(.5);
-    z-index: -10;
+    transform: scale(.4);
+    // z-index: -10;
 
     @include mobile {
       left: -350px;
-      top: -300px;
-      transform: scale(.25);
+      top: -315px;
+      transform: scale(.20);
     }
   }
 
