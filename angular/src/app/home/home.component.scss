@@ -105,22 +105,6 @@ p {
   font-size: 30px;
 }
 
-.latest-project--summary {
-  display: flex;
-  h4 {
-    text-transform: uppercase;
-  }
-
-  div {
-    margin: 10px;
-    width: 50%;
-
-    &:nth-of-type(2) {
-      text-align: right;
-    }
-  }
-}
-
 .launch-button-container {
   display: flex;
   justify-content: center;
