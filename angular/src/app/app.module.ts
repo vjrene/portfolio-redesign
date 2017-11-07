@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { MasonryModule } from 'angular2-masonry';
 
 export const ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -27,12 +29,14 @@ export const ROUTES: Routes = [
     AboutComponent,
     ContactComponent,
     ProjectComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    MasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

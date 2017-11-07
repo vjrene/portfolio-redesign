@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   location: Location;
-  s = 'hello this is test';
+  s = '';
 
   openMenu() {
-    console.log(this.s);
+    this.s = 'you\'ve clicked';
   }
   constructor(location: Location) {
     this.location = location;

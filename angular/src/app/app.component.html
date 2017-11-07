@@ -3,7 +3,7 @@
 
   <div class="top-left">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="738.5" height="710" viewBox="0 0 738.5 710">
+<svg class="frame-svg" xmlns="http://www.w3.org/2000/svg" width="738.5" height="710" viewBox="0 0 738.5 710">
   <g fill="#195F64">
     <path opacity=".25" d="M147 488L93 0l645.5 198"/>
     <path opacity=".25" d="M0 179l593-89-197 620"/>
@@ -24,19 +24,32 @@
       </nav>
     </div>
 
+    
+
   <div class="mobile-nav">
     <div class="mobile-nav--closed">
-        <div class="open-nav"><fa name="bars"></fa></div>
+        <div class="open-nav"><fa name="bars"  (click)="openMenu()"></fa></div>
+
+
+        <div>
+            <p>testing click: {{s}}</p>
+
+            
+                </div>
 
     </div>
+
+   
 
 
 
 
     <div class="mobile-nav--open">
-        <div class="close-nav"><fa name="close" (click)="openMenu()"></fa></div>
+        <div class="close-nav"><fa name="close"></fa>
+        </div>
 
-        <p>{{s}}</p>
+
+        
 
           <ul class="mobile-list">
             <li>
@@ -86,7 +99,7 @@
 
   <div class="bottom-right">
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="1068" height="740" viewBox="0 0 1068 740">
+      <svg class="frame-svg" xmlns="http://www.w3.org/2000/svg" width="1068" height="740" viewBox="0 0 1068 740">
         <path opacity=".32" fill="#E49273" d="M692 0l376 286-612 250"/>
         <path opacity=".3" fill="#F2C8A2" d="M182 26.108L938.57 178 488.593 600.58"/>
         <path opacity=".39" fill="#F0D3B5" d="M0 188l780-10-492 562"/>
