@@ -47,13 +47,15 @@ p {
   width: 33%;
   padding-top: 2em;
   text-align: center;
-  h2 {
-    font-family: Khand;
-  }
+  display: flex;
+  align-items: center;
 
   @include mobile {
     padding-top:0;
     width: 100%;
+    // display: flex;
+    justify-content: center;
+    padding: .5em;
   }
 }
 
@@ -75,6 +77,10 @@ p {
   max-width: 500px;
   background: $forest;
   margin-bottom: 1em;
+
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .latest-project {
@@ -91,6 +97,9 @@ p {
   @include mobile {
     //width: 100%;
     min-width: 0;
+    display: block;
+    justify-content: auto;
+    align-content: auto;
   }
 }
 
@@ -112,6 +121,10 @@ p {
 
   .launch-button {
     width: 70%;
+
+    @include mobile {
+      width: 250px;
+    }
   }
 }
 

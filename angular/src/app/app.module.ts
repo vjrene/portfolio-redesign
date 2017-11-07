@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { RouterModule, Routes } from '@angular/router';
 import { WorkComponent } from './work/work.component';
@@ -30,7 +31,8 @@ export const ROUTES: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES, { useHash: true })
+    RouterModule.forRoot(ROUTES, { useHash: true }),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,6 +23,63 @@
         <a routerLink="/project" routerLinkActive="active">project</a>
       </nav>
     </div>
+
+  <div class="mobile-nav">
+    <div class="mobile-nav--closed">
+        <div class="open-nav"><fa name="bars"></fa></div>
+
+    </div>
+
+
+
+
+    <div class="mobile-nav--open">
+        <div class="close-nav"><fa name="close" (click)="openMenu()"></fa></div>
+
+        <p>{{s}}</p>
+
+          <ul class="mobile-list">
+            <li>
+              <div routerLinkActive="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="237.098" height="10.227">
+                  <path fill="#F9C8BA" d="M0 0h237.1v20.227H0z"/>
+                </svg>
+            </div>
+              <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          </li>
+            <li>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="237.098" height="10.227">
+                      <path fill="#F9C8BA" d="M0 0h237.1v20.227H0z"/>
+                    </svg>
+                </div>
+              <a routerLink="/work" routerLinkActive="active">Work</a></li>
+
+            <li>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="237.098" height="10.227">
+                      <path fill="#F9C8BA" d="M0 0h237.1v20.227H0z"/>
+                    </svg>
+                </div>
+              <a routerLink="/about" routerLinkActive="active">About</a></li>
+
+
+            <li>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="237.098" height="10.227">
+                      <path fill="#F9C8BA" d="M0 0h237.1v20.227H0z"/>
+                    </svg>
+                </div>
+              <a routerLink="/contact" routerLinkActive="active">contact</a></li>
+
+
+            <!-- <li><a routerLink="/project" routerLinkActive="active">project</a></li> -->
+          </ul>
+
+        </div>
+
+    </div>
+
     <div class="router-container">
      <router-outlet></router-outlet>
   </div>
