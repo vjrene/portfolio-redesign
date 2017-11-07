@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MasonryModule } from 'angular2-masonry';
-
+import { MasonryOptions } from 'angular2-masonry';
 
 @Component({
   selector: 'app-gallery',
@@ -10,6 +10,9 @@ import { MasonryModule } from 'angular2-masonry';
 export class GalleryComponent implements OnInit {
 
   constructor() { }
+
+  public myOptions: MasonryOptions = {
+  };
 
  bricks = [
     {title: 'Brick 1'},
