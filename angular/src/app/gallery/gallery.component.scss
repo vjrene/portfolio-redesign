@@ -1,8 +1,34 @@
 @import "../../styles";
 
+.brick-container {
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // margin: 0 auto !important;
+}
+
 .brick { 
-  width: 250px; 
-  height: 350px;
-  background: $emerald;
-  margin: 10px;
+  // width: 30%; 
+  // height: 350px;
+  // background: $emerald;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include smallscreen {
+    width: 100%;
+  }
+
+  img {
+    width: 270px;
+
+    @include smallscreen {
+      width: 350px;
+    }
+  }
+
+  @include mobile {
+    // min-width: 175px;
+  }
 }

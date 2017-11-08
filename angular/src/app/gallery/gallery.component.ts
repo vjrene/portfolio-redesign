@@ -12,15 +12,23 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   public myOptions: MasonryOptions = {
+     resize: true,
+    // fitWidth: false,
+     percentPosition: true
   };
 
  bricks = [
-    {title: 'Brick 1'},
-    {title: 'Brick 2'},
-    {title: 'Brick 3'},
-    {title: 'Brick 4'},
-    {title: 'Brick 5'},
-    {title: 'Brick 6'}
+    { src: '../assets/projects/001beautiful/01.jpg' },
+    { src: '../assets/projects/001beautiful/02.jpg' },
+    { src: '../assets/projects/001beautiful/03.jpg' },
+    { src: '../assets/projects/001beautiful/04.jpg' },
+    { src: '../assets/projects/001beautiful/05.jpg' },
+    { src: '../assets/projects/001beautiful/06.jpg' },
+    { src: '../assets/projects/001beautiful/07.jpg' },
+    { src: '../assets/projects/001beautiful/08.jpg' },
+    { src: '../assets/projects/001beautiful/09.jpg' },
+    { src: '../assets/projects/001beautiful/10.jpg' },
+
   ];
 
   ngOnInit() {
