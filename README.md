@@ -1,3 +1,3 @@
 # portfolio-redesign
 vanessography.com redesign
-view progress at: http://www.vjrene.github.io
+view progress at: http://vjrene.github.io
