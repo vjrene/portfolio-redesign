@@ -1,0 +1,17 @@
+.red-footer--cntr {
+  background: $red;
+  min-height: 75px;
+
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+}

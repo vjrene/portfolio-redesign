@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+@font-face {
+  font-family: TEXbold;
+  src: url('../../assets/fonts/texgyreadventor-bold.otf');
+}
+
+@font-face {
+  font-family: TEXreg;
+  src: url('../../assets/fonts/texgyreadventor-regular.otf');
+}
+
+.white--text {
+  color: $white;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TEXbold', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  // margin: 0;
+  // padding: 20px 0;
+}
+
+h1 {
+  font-size: 3.5em;
+  padding: .15em 0;
+}
+
+h2 {
+  font-size: 2.75em;
+  padding: .15em 0;
+}
+
+h3 {
+  font-size: 2em;
+  padding: .15em 0;
+}
+
+h4 {
+  font-size: 1.75em;
+  padding: .15em 0;
+}
+
+.header--cntr {
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  @include mobile {
+    // padding: 20px;
+  }
+}
+
+.heading--blockquote {
+  max-width: 600px;
+  padding: 0 0 0 25px;
+}
+
+.blockquote {
+  border-left: 10px solid $red;
+  margin: 0 auto;
+
+  h2,
+  .blockquote--title {
+    margin-top: -23px;
+  }
+}
+

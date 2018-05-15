@@ -1,0 +1,12 @@
+.section-work-gallery {
+  // background: $black;
+  margin-top: 40px;
+}
+
+.work-gallery--cntr {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  // @include justify-content(center);
+  max-width: 1440px;
+  margin: 0 auto;
+}

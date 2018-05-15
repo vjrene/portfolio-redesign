@@ -1,0 +1,54 @@
+@import "../../styles";
+
+html, body, .about-container {
+  height: 100%;
+}
+
+.about-container {
+  display: flex;
+  // flex-wrap: nowrap;
+  // justify-content: flex-start;
+  // align-items: stretch;
+  // align-content: stretch;
+
+  // min-height: 100%;
+
+  @include mobile {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  }
+
+
+  .flex {
+    width: 50%;
+    min-height: 450px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.about-photo {
+  background-image: url('/../assets/images/bio.png');
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;;
+
+}
+
+.about-text {
+  background: $forest;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    padding: 2em;
+  }
+}

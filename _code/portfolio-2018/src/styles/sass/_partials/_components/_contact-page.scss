@@ -1,0 +1,30 @@
+.contact-page--cntr {
+background: $black;
+
+  .home-contact--section {
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(center);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .header--cntr {
+    padding: 40px;
+    color: $white;
+  }
+
+  .home-contact--cntr {
+    .contact-side-title {
+      display: none;
+    }
+    .home-contact-form {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.more-links--wide {
+  max-width: 1440px;
+  margin: 0 auto;
+  @include flexbox;
+  @include justify-content(space-around);
+  @include align-items(center);
+  padding: 60px 0;
+}

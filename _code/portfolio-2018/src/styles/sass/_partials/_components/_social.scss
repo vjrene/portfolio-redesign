@@ -1,0 +1,18 @@
+.social--cntr {
+  @include flexbox;
+  @include align-items(center);
+  padding: 10px 0;
+
+  a {
+    @include transition(.3s color ease);
+    padding: 0 10px 0;
+    display: inline-block;
+    font-size: 22px;
+  }
+}
+
+.after--bio {
+  .social--cntr {
+    @include justify-content(flex-end);
+  }
+}
