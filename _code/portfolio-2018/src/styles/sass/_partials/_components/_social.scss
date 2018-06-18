@@ -1,18 +1,54 @@
 .social--cntr {
   @include flexbox;
-  @include align-items(center);
-  padding: 10px 0;
+  @include flex-direction(column);
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  position: fixed;
+  z-index: 99999;
+}
 
-  a {
-    @include transition(.3s color ease);
-    padding: 0 10px 0;
-    display: inline-block;
-    font-size: 22px;
+.social--icons_cntr--close  {
+  display: none;
+}
+
+.social--icons_cntr--open {
+  width: 40px;
+  min-height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  padding: 5px;
+  @include transition(.3s all ease);
+}
+
+.social--icons-link {
+  text-decoration: none;
+  color: $darkgrey;
+  @include transition(.3s all ease);
+
+  &:hover {
+    color: $white;
   }
 }
 
-.after--bio {
-  .social--cntr {
-    @include justify-content(flex-end);
+.social--btn-click {
+  background: $darkgrey;
+  color: $white;
+  height: 40px;
+  width: 40px;
+  font-family: GothamLight;
+  font-size: 28px;
+  @include transition(.3s all ease);
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  cursor: pointer;
+
+  &:hover {
+    background: $white;
+    color: $darkgrey;
   }
 }

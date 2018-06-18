@@ -1,0 +1,33 @@
+.home-landing--cntr {
+  background: $greypurple;
+}
+
+.home-landing--content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.landing--title {
+  position: relative;
+  z-index: 9999;
+  font-family: Gotham;
+  text-align: center;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+
+.landing--title_txt {
+  font-family: Gotham;
+  color: $textmint;
+}
+
+.scroll-indicator--cntr {
+  // position: absolute;
+}

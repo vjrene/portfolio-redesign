@@ -1,184 +1,32 @@
-.about-page--cntr {
-  height: 100%;
-  background: $black;
+.about-cntr,
+.contact-cntr {
+  background: $greypurple;
+  position: relative;
 
-  .section--full-width {
-    min-height: 100vh;
-    max-width: 1080px;
-    margin: 0 auto;
-    @include flexbox;
-    @include justify-content(center);
-    @include align-items(center);
-  }
-}
-
-.section--bio {
-  width: 100%;
-  height: 100%;
-
-  @include flexbox;
-  @include justify-content(space-between);
-  margin: 0 auto;
-
-  @include mobile {
-    height: auto;
-    @include flex-direction(column-reverse);
-  }
-
-  > div {
-    width: calc(50% - 40px);
-    padding-top: 20px;
-
-    @include tablet {
-      width: calc(50% - 20px);
+  .borders--cntr {
+    .left-border {
+      position: absolute;
     }
 
-    @include mobile {
-      width: 100%;
-      padding-top: 10px;
+    .right-border {
+      position: fixed;
     }
   }
 }
 
-.profile-picture {
-  height: 100%;
-
-  @include mobile {
-    width: 100%;
-    height: 300px;
-    padding-top: 0 !important;
-  }
+.about--content,
+.contact--content {
+  position: absolute;
+  top: 0;
 }
 
-.profile-backer {
+.about-animation,
+.contact-animation {
+  position: absolute;
   height: 100%;
-  min-height: 550px;
   width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.profile-text {
-  color: $white;
   @include flexbox;
-  @include justify-content(center);
   @include align-items(center);
-}
-
-// about text
-.about-text--cntr {
-  width: 100%;
-  
-  .contact--shadow {
-    @include mobile {
-      display: block;
-    }
-  }
-
-  .home-contact--cntr {
-    @include mobile {
-      margin-top: 0;
-    }
-  }
-
-
-  .contact--cntr {
-    @include mobile {
-      @include flex-direction(column-reverse);
-    }
-  }
-
-
-  .block-shadow {
-    min-width: 80%;
-  }
-
-  .contact--shadow {
-    // margin-right: 15%;
-    margin-top: 0;
-    // margin-bottom: -25%;
-    min-height: 440px;
-
-    @include mobile {
-      width: 100%;
-      min-height: 40px;
-    }
-  }
-
-  .about--text_full {
-    width: 80%;
-    margin-left: -71%;
-    margin-top: -25%;
-
-    @include mobile {
-      margin-top: 0;
-      width: 100%;
-      margin-left: 0;
-    }
-  }
-
-  .about--text  {
-    width: 100%;
-    background: white;
-    border: 1px solid $red;
-    min-height: 440px;
-
-    .view--work {
-      padding: 20px 0;
-      a {
-        color: $black;
-        @include transition(.3s color ease);
-        
-        &:hover {
-          color: $red;
-        }
-      }
-    }
-
-    .social--cntr {
-      a {
-        color: $red;
-        @include transition(.3s color ease);
-
-        &:hover {
-          color: $black;
-        }
-      }
-    }
-
-    @include mobile {
-      border: 0;
-      min-height: 0;
-    }
-  }
-
-  .contact-form--full {
-    margin-left: 0;
-    margin-top: 0;
-    position: static;
-  }
-}
-
-.about--text {
-  color: $black;
-  padding: 20px;
-
-  p {
-    margin-bottom: 10px;
-  }
-}
-
-.about--text_header {
-  text-transform: uppercase;
-  color: $red;
-  text-align: right;
-  padding: 10px;
-
-  @include tablet {
-    text-align: left;
-  }
-  @include mobile {
-    text-align: left;
-  }
+  @include justify-content(center);
+  margin: 0 auto;
 }

@@ -1,77 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-
-@font-face {
-  font-family: TEXbold;
-  src: url('../../assets/fonts/texgyreadventor-bold.otf');
-}
-
-@font-face {
-  font-family: TEXreg;
-  src: url('../../assets/fonts/texgyreadventor-regular.otf');
-}
-
-.white--text {
-  color: $white;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  font-family: 'Karla', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'TEXbold', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, p, span {
-  // margin: 0;
-  // padding: 20px 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-  font-size: 3.5em;
-  padding: .15em 0;
+  font-family: GothamLight, sans-serif;
+  display: block;
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: GothamBold, sans-serif;
 }
 
 h2 {
-  font-size: 2.75em;
-  padding: .15em 0;
+  display: block;
+  font-size: 2.25em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h3 {
-  font-size: 2em;
-  padding: .15em 0;
+  display: block;
+  font-size: 1.7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h4 {
-  font-size: 1.75em;
-  padding: .15em 0;
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.header--cntr {
-  padding: 40px;
-  max-width: 1440px;
-  margin: 0 auto;
-  @include flexbox;
-  @include align-items(center);
-  @include justify-content(center);
+p {
+  margin-bottom: 10px;
 
-  @include mobile {
-    // padding: 20px;
+  &:first-of-type {
+    margin-top: 10px;
   }
 }
 
-.heading--blockquote {
-  max-width: 600px;
-  padding: 0 0 0 25px;
+@font-face {
+  font-family: GothamBold;
+  src: url('../../assets/fonts/Gotham-Bold.otf');
 }
 
-.blockquote {
-  border-left: 10px solid $red;
-  margin: 0 auto;
-
-  h2,
-  .blockquote--title {
-    margin-top: -23px;
-  }
+@font-face {
+  font-family: GothamLight;
+  src: url('../../assets/fonts/Gotham-Light.otf');
 }
-

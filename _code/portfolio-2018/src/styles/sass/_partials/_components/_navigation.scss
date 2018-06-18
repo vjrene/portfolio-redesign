@@ -1,0 +1,61 @@
+
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+.nav--primary {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(space-between);
+  position: absolute;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  max-width: 1080px;
+  width: 100%;
+
+  a, .logo--main {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: $lightpurple;
+      bottom: -10px;
+      @include transition(all .3s ease-in-out);
+      @include transform(scaleX(0));
+      visibility: hidden;
+    }
+
+    &:hover:before {
+      visibility: visible;
+      @include transform(scaleX(1));
+    }
+  }
+}
+
+.nav--primary_logo-cntr {
+  svg {
+    max-height: 55px;
+    max-width: 55px;
+  }
+}
+.nav--primary_links-cntr {
+  a {
+    color: $cream;
+    margin: 0 15px;
+    font-family: GothamLight;
+    text-decoration: none;
+    font-size: 1.15em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

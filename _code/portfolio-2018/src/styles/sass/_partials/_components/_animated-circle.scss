@@ -1,0 +1,38 @@
+.animated-circle--cntr {
+  min-width: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  position: relative;
+  z-index: 9999;
+}
+
+.svg-circle {
+  width: 100%;
+  height: auto;
+}
+
+.innerCircle {
+  animation-name: incOpacity;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.innerCircle--text {
+   transform: scale(.007);
+  font-family: GothamLight, sans-serif;
+  font-size: 3.5em;
+}
+
+@keyframes incOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

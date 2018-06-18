@@ -1,0 +1,162 @@
+.work-preview--cntr {
+  .right-border {
+    z-index: 9999;
+  }
+}
+
+.work-preview--content_cntr {
+  @include flexbox;
+  position: relative;
+}
+
+.work-preview--content_cntr {
+  width: 100%;
+    @include flexbox;
+}
+
+.work-preview--meta {
+  position: absolute;
+  top: -100vh;
+  left: 20px;
+  width: calc((100% / 3) - 30px);
+  height: 100vh;
+  // width: 100%;
+  // background: ;
+}
+
+.work-preview--featured {
+  position: absolute;
+  top: -100vh;
+  left: calc((100% / 3) - 10px);
+  background: #998c9e;
+  width: calc(100% - (100% / 3) + 10px);
+  height: 100vh;
+
+  .featured-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: .75;
+    background-repeat: no-repeat;
+  }
+}
+
+.work-preview--meta {
+  padding: 25px;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(center);
+}
+
+.work-preview--meta_title-cntr {
+  text-align: right;
+}
+
+.work-preview--meta_place,
+.work-preview--meta_title,
+.work-preview--meta_type {
+  margin: 0;
+}
+
+.work-preview--meta_type {
+  font-style: oblique;
+  font-size: 1.25em;
+}
+
+.work-preview--meta_descr {
+  text-align: justify;
+  padding-top: 1em;
+  margin: 1em 0;
+}
+
+.work-preview--meta_launch-btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  position: relative;
+  padding: 10px 0;
+  // text-align: center;
+  @include transition(.3s ease all);
+
+  &:hover {
+    .launch-btn_underline {
+      // width: 100%;
+      // visibility: visible;
+      @include animation(under 1s infinite);
+    }
+  }
+}
+
+.launch-btn_underline {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // display: none;
+  // visibility: hidden;
+  display: inline-block;
+  height: 3px;
+  font-size: 40px;
+  // margin: 2px 0;
+  @include transition(.3s all ease);
+}
+
+@keyframes under {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.next-project--home {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  font-family: GothamBold;
+  cursor: pointer;
+
+}
+
+.next-project--home {
+  @include flexbox;
+  @include flex-direction(column);
+
+  .scroll-indicator {
+    @include transition(.3s all ease);
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.ellipses {
+  width: 0;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  @include transition(.3s all ease);
+  @include animation(ell 2.5s infinite);
+}
+
+@keyframes ell {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 5px
+  }
+
+  66% {
+    width: 10px;
+  }
+
+  100%{
+    width: 15px;
+  }
+}
+
